@@ -75,7 +75,7 @@ alias standup 'git-standup'
 
 # PRs
 alias prs 'hub pr list -L 20 -b develop --format="%t%n - Branch: [%H]%n - %U%n - %l%n%n"'
-alias prc 'hub pr checkout '
+alias prc 'hub pr checkout'
 
 # Nuke the node_modules folder
 alias nuke 'rm -rf node_modules'
