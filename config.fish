@@ -7,11 +7,8 @@ source ~/.config/fish/abbr.fish
 #########
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
-# fnm
-# eval "$(fnm env --multi)"
-fnm env --multi | source
-
 # Starship theme - https://starship.rs/
+set -x STARSHIP_CONFIG ~/.config/fish/starship.toml
 starship init fish | source
 
 test -e {$HOME}/.config/.iterm2_shell_integration.fish ; and source {$HOME}/.config/.iterm2_shell_integration.fish
