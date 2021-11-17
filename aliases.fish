@@ -6,8 +6,8 @@ alias ..... 'cd ../../../..'
 alias ls 'exa'
 alias lsd 'exa -l' # only directories
 alias hosts 'sudo vim /private/etc/hosts'
-alias aliases 'vim ~/.config/fish/config.fish'
-alias git 'hub'
+alias aliases 'vim ~/.config/fish/aliases.fish'
+# alias git 'hub'
 
 # GIT STUFF
 alias ga 'git add'
@@ -17,6 +17,8 @@ alias gaa 'git add --all'
 alias gb 'git branch'
 alias gcm 'git commit -m '
 alias gcma 'git commit --all'
+alias gsw 'git switch'
+alias g- 'git switch -'
 alias gco 'git checkout'
 alias gc 'git checkout'
 alias gpl 'git pull'
@@ -25,7 +27,7 @@ alias gpu 'git push'
 
 alias gpuf 'git push -f'
 alias gm 'git merge'
-alias gr 'git reset'
+# alias gr 'git reset'
 
 alias gs 'git status'
 
@@ -66,6 +68,8 @@ alias gfch 'git fetch'
 
 alias gd 'git diff'
 
+alias cgbr 'branch feature/'
+
 # Undoing
 alias undopush 'git push -f origin HEAD^:master' # Undo a `git push`
 alias undocommit 'git reset HEAD~1'
@@ -81,11 +85,12 @@ alias prc 'hub pr checkout'
 alias nuke 'rm -rf node_modules'
 
 # Update Ruby gems, Homebrew, npm & their installed packages
-alias updatebrew 'brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor'
+alias updatebrew 'brew -v update; brew upgrade --force-bottle; brew cleanup; brew cask cleanup; brew doctor'
 alias updateall 'brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
 
 alias updatenpmglobal 'npm-check -g -u'
 alias updatenpm 'npm-check -u'
+alias un updatenpm
 alias updateyarn 'yarn upgrade-interactive --latest'
 alias uy updateyarn
 alias updateyarnglobal 'yarn global upgrade-interactive --latest'
@@ -110,6 +115,26 @@ alias yb 'yarn build'
 alias yf 'yarn format'
 alias ytc 'yarn type-check'
 
+# npm
+alias ni 'npm i -S'
+alias nid 'npm i -D'
+alias nip 'npm i -P'
+
+alias nr 'npm run'
+alias ns 'npm start'
+alias nd 'npm run dev'
+alias nt 'npm test'
+alias ntw 'npm run test --watch'
+alias nt:w 'npm run test:watch'
+alias ntjs 'npm run test:js'
+alias nt:js 'npm run test:js'
+alias nsb 'npm run storybook'
+alias nsbb 'npm run storybook:build'
+alias nl 'npm run lint'
+alias nb 'npm run build'
+alias nf 'npm run format'
+alias ntc 'npm run type-check'
+
 alias npq="NPQ_PKG_MGR=yarn npq-hero"
 
 alias myip 'curl icanhazip.com'
@@ -121,3 +146,7 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
+
+alias python "/usr/local/bin/python3"
+
+# alias nvm "fnm"
