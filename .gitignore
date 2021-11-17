@@ -1,2 +1,4 @@
 .config.fish.swp
 fishd.*
+conf.d
+completions

@@ -1,6 +1,0 @@
-[aws]
-disabled = true
-
-[directory]
-truncation_length = 2
-fish_style_pwd_dir_length = 1
