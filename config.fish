@@ -7,4 +7,16 @@ if status is-interactive
 end
 
 set fish_greeting
-# nvm use 17.1.0
+# nvm use 18.16.0
+
+
+set -gx PNPM_HOME "/Users/zander/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# set -gx NODE_OPTIONS --max_old_space_size=20480
+mcfly init fish | source
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/zander/google-cloud-sdk/path.fish.inc' ]; . '/Users/zander/google-cloud-sdk/path.fish.inc'; end
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+

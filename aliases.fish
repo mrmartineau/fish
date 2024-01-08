@@ -3,11 +3,14 @@ alias cd.. 'cd ..'
 alias ... 'cd ../..'
 alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
-alias ls 'exa'
-alias lsd 'exa -l' # only directories
+alias ls 'eza'
+alias lsd 'eza -l' # only directories
 alias hosts 'sudo vim /private/etc/hosts'
 alias aliases 'vim ~/.config/fish/aliases.fish'
+alias cat 'bat'
 # alias git 'hub'
+
+alias info 'neofetch'
 
 # GIT STUFF
 alias ga 'git add'
@@ -116,25 +119,26 @@ alias yf 'yarn format'
 alias ytc 'yarn type-check'
 
 # npm
-alias ni 'npm i -S'
-alias nid 'npm i -D'
-alias nip 'npm i -P'
+# alias ni 'npm i -S'
+# alias nid 'npm i -D'
+# alias nip 'npm i -P'
 
-alias nr 'npm run'
-alias ns 'npm start'
-alias nd 'npm run dev'
-alias nt 'npm test'
-alias ntw 'npm run test --watch'
-alias nt:w 'npm run test:watch'
-alias ntjs 'npm run test:js'
-alias nt:js 'npm run test:js'
-alias nsb 'npm run storybook'
-alias nsbb 'npm run storybook:build'
-alias nl 'npm run lint'
-alias nb 'npm run build'
-alias nf 'npm run format'
-alias ntc 'npm run type-check'
+# alias nr 'npm run'
+# alias ns 'npm start'
+# alias nd 'npm run dev'
+# alias nt 'npm test'
+# alias ntw 'npm run test --watch'
+# alias nt:w 'npm run test:watch'
+# alias ntjs 'npm run test:js'
+# alias nt:js 'npm run test:js'
+# alias nsb 'npm run storybook'
+# alias nsbb 'npm run storybook:build'
+# alias nl 'npm run lint'
+# alias nb 'npm run build'
+# alias nf 'npm run format'
+# alias ntc 'npm run type-check'
 
+# https://github.com/lirantal/npq
 alias npq="NPQ_PKG_MGR=yarn npq-hero"
 
 alias myip 'curl icanhazip.com'
@@ -147,6 +151,12 @@ alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
 
-alias python "/usr/local/bin/python3"
+alias python "python3"
 
 # alias nvm "fnm"
+
+alias ai="mods -f"
+alias aipr="git --no-pager diff main | mods -f 'write a pull request description for this patch'"
+alias aiprcopy="git --no-pager diff main | mods -f 'write a pull request description for this patch' | pbcopy"
+
+alias info "neofetch"

@@ -1,11 +1,6 @@
-# fishpkg/fish-prompt-metro
-# hauleth/agnoster
-# matchai/spacefish
-# rafaelrinaldi/prune
-
 jorgebucaran/fisher
-brigand/fast-nvm-fish
 IlanCosman/tide@v5
 jethrokuan/z
 joseluisq/gitnow
 laughedelic/pisces
+jorgebucaran/nvm.fish
